@@ -28,14 +28,14 @@
   <body>
 
     <header id="header">
-      <img src="logo.png">
-      <h1>Simple Website</h1>
+      <img src="logo.png" style="width: 10%; height: auto;">
+      <h1>恋与深空战力换算</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#battlestat">战力换算</a></li>
+        <li><a href="#protocore">芯核资料（建设中）</a></li>
+        <li><a href="#others">其他（建设中）</a></li>
       </ul>                 
     </header>
    
@@ -43,22 +43,31 @@
       <div class="inner">
         <div id="content"> 
           
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
+          <div id="battlestat" class="content-region hide">
+            <h2>战力换算</h2>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
+              总战力计算，换算防御/生命/攻击 到总战力。
             </p>
+            <select id="operation">
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+            </select>
+            <br><br>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <input type="number" id="result" placeholder="Enter result">
+            <button onclick="calculate()">Calculate</button>
           </div>
           
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
+          <div id="protocore" class="content-region hide">
+            <h2>芯核资料（建设中）</h2>
             <p>
               Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
             </p>
           </div>
           
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
+          <div id="others" class="content-region hide">
+            <h2>其他（建设中）</h2>
             <p>
               Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
             </p>
@@ -74,6 +83,6 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-    
+    <script type="text/javascript" src="calculator.js"></script>
   </body>
 </html>
