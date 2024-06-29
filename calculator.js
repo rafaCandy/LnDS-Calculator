@@ -75,7 +75,7 @@ function 末夜套(num1_id, num2_id, result_id) {
         防御 = (parseFloat(总伤害) - parseFloat(攻击)/2.29)/1.73;
         防御 = Math.round(防御);
         document.getElementById(num2_id).value = 防御;
-    } else if (攻击 && 防御 && !总伤害) {
+    } else if (攻击 && 防御 ) {
         // Calculate 总伤害
         总伤害 = parseFloat(攻击)/2.29 + parseFloat(防御)*1.73;
         总伤害 = Math.round(总伤害);
@@ -102,7 +102,7 @@ function 永恒套(num1_id, num2_id, result_id) {
         防御 = (parseFloat(总伤害) - parseFloat(攻击)/3.12)/1.27;
         防御 = Math.round(防御);
         document.getElementById(num2_id).value = 防御;
-    } else if (攻击 && 防御 && !总伤害) {
+    } else if (攻击 && 防御) {
         // Calculate 总伤害
         总伤害 = parseFloat(攻击)/3.12 + parseFloat(防御)*1.27;
         总伤害 = Math.round(总伤害);
@@ -129,7 +129,7 @@ function 神殿套(num1_id, num2_id, result_id) {
         生命 = (parseFloat(总伤害) - parseFloat(攻击))*11;
         生命 = Math.round(生命);
         document.getElementById(num2_id).value = 生命;
-    } else if (攻击 && 生命 && !总伤害) {
+    } else if (攻击 && 生命 ) {
         // Calculate 总伤害
         总伤害 = parseFloat(攻击) + parseFloat(生命)/11;
         总伤害 = Math.round(总伤害);
