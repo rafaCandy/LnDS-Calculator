@@ -45,47 +45,50 @@
           
           <div id="battlestat" class="content-region hide">
             <h2>战力换算</h2>
-            <p>
-              总战力计算，换算防御/生命/攻击 到总战力。
-            </p>
-            <p>
+            <p>没有绝好的芯核要怎么选配搭档！</p>
+            <p>总战力计算，换算防御/生命/攻击 到总战力。</p>
+            <p>注：输入其中两个数值，计算第三个。</p>
+            <h5>
               第一组
-            </p>
-            <select id="operation">
-                <option value="addition">Addition</option>
-                <option value="subtraction">Subtraction</option>
+            </h5>
+            <select id="operation1">
+                <option value="末夜套">末夜套（防御）</option>
+                <option value="永恒套">永恒套（防御）</option>
+                <option value="神殿套">神殿套（生命）</option>
             </select>
             <br><br>
-            <input type="number" id="num1" placeholder="数值1">
-            <input type="number" id="num2" placeholder="数值2">
-            <input type="number" id="result" placeholder="总战力">
-            <button onclick="calculate()">计算</button>
+            <input type="number" id="num1" placeholder="攻击">
+            <input type="number" id="num2" placeholder="防御/生命">
+            <input type="number" id="result1" placeholder="总伤害">
+            <button onclick="calculate_team1()">计算</button>
             <br><br>
-            <p>
+            <h5>
               第二组
-            </p>
-            <select id="operation">
-              <option value="addition">Addition</option>
-              <option value="subtraction">Subtraction</option>
+            </h5>
+            <select id="operation2">
+              <option value="末夜套">末夜套（防御）</option>
+              <option value="永恒套">永恒套（防御）</option>
+              <option value="神殿套">神殿套（生命）</option>
             </select>
             <br><br>
-            <input type="number" id="num1" placeholder="数值1">
-            <input type="number" id="num2" placeholder="数值2">
-            <input type="number" id="result" placeholder="总战力">
-            <button onclick="calculate()">计算</button>
+            <input type="number" id="num3" placeholder="攻击">
+            <input type="number" id="num4" placeholder="防御/生命">
+            <input type="number" id="result2" placeholder="总伤害">
+            <button onclick="calculate_team2()">计算</button>
             <br><br>
-            <p>
+            <h5>
               第三组
-            </p>
-            <select id="operation">
-              <option value="addition">Addition</option>
-              <option value="subtraction">Subtraction</option>
+            </h5>
+            <select id="operation3">
+              <option value="末夜套">末夜套（防御）</option>
+              <option value="永恒套">永恒套（防御）</option>
+              <option value="神殿套">神殿套（生命）</option>
             </select>
             <br><br>
-            <input type="number" id="num1" placeholder="数值1">
-            <input type="number" id="num2" placeholder="数值2">
-            <input type="number" id="result" placeholder="总战力">
-            <button onclick="calculate()">计算</button>
+            <input type="number" id="num5" placeholder="攻击">
+            <input type="number" id="num6" placeholder="防御/生命">
+            <input type="number" id="result3" placeholder="总伤害">
+            <button onclick="calculate_team3()">计算</button>
           </div>
           
           <div id="protocore" class="content-region hide">
@@ -106,8 +109,10 @@
       </div>
     </div>
 
-    <footer>  
-      Footer region
+    <footer style="color: dimgray">
+      <!-- <p>© 2024 恋与深空战力换算</p> -->
+      <p>数据参考：小红书@小红薯5D1FE509</p>
+      <p>制作：<a href="https://www.xiaohongshu.com/user/profile/5c271d6a000000000501891c">小红书@Candice</a></p>
     </footer>
     
     <!-- Load additional JS scripts here -->
