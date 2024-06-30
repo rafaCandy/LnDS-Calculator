@@ -27,3 +27,32 @@
     });
     
   })(jQuery);
+
+
+
+document.getElementById('toggle-info1').addEventListener('change', function () {
+    var displayWindow = document.getElementById('info1');
+    if (this.checked) {
+        displayWindow.style.display = 'block';
+    } else {
+        displayWindow.style.display = 'none';
+    }
+});
+
+document.getElementById('toggle-info2').addEventListener('change', function () {
+  var displayWindow = document.getElementById('info2');
+  if (this.checked) {
+      displayWindow.style.display = 'block';
+  } else {
+      displayWindow.style.display = 'none';
+  }
+});
+
+document.getElementById('toggle-info3').addEventListener('change', function () {
+  var displayWindow = document.getElementById('info3');
+  if (this.checked) {
+      displayWindow.style.display = 'block';
+  } else {
+      displayWindow.style.display = 'none';
+  }
+});

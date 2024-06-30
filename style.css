@@ -140,23 +140,44 @@ html {
     width: 10%;
     height: auto;
   }
-  .display-window {
-      width: 95%;
-      height: 80px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin: 1% auto;
-      overflow-y: auto;
-      white-space: pre-wrap;
-      border-radius: 10px; /* Rounded corners */
-      background-color: rgba(245, 245, 220, 0.8); /* Beige background with 80% opacity */
-      color: black; /* Black text */
-  }
   .team {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(239, 239, 227, 0.359);
   }
+  .input-container {
+    width: 98%;
+    margin: 2px auto;
+    padding: 2px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 227, 0.359); */
+  }
+  .display-window {
+    width: 98%;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: 1% auto;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige background with 80% opacity */
+    color: black; /* Black text */
+    display: block; /* Show the display by default */
+}
+  /* .input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 227, 0.359);
+  } */
+  /* .label {
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+  } */
