@@ -56,7 +56,7 @@ html {
    * Paragraphs
    */
   p {
-    margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
+    margin: 0 auto 1em auto; /* bottom margin for paragraphs */
   }
   p + p {
   
@@ -135,4 +135,28 @@ html {
   }
   .show {
     display:block;
+  }
+  .logo {
+    width: 10%;
+    height: auto;
+  }
+  .display-window {
+      width: 95%;
+      height: 80px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 1% auto;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      border-radius: 10px; /* Rounded corners */
+      background-color: rgba(245, 245, 220, 0.8); /* Beige background with 80% opacity */
+      color: black; /* Black text */
+  }
+  .team {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 227, 0.359);
   }
