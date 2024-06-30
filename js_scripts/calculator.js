@@ -11,16 +11,17 @@ function calculate_team1() {
     result_id = 'result1'
     rank_id = 'rank1'
     match_id = 'match1'
+    contest_multiplier_id = 'contest_multiplier1'
     info_id = 'info1'
 
     if (solarpair1 === '末夜套') {
-        末夜套(num1_id, num2_id, result_id, rank_id, match_id, info_id);
+        末夜套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair1 === '永恒套') {
-        永恒套(num1_id, num2_id, result_id, rank_id, match_id, info_id);
+        永恒套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair1 === '神殿套') {
-        神殿套(num1_id, num2_id, result_id, rank_id, match_id, info_id);
+        神殿套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair1 === '深海套') {
-        深海套(num1_id, num2_id, result_id, rank_id, match_id, info_id);
+        深海套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     }
 }
 
@@ -32,16 +33,17 @@ function calculate_team2() {
     result_id = 'result2'
     rank_id = 'rank2'
     match_id = 'match2'
+    contest_multiplier_id = 'contest_multiplier2'
     info_id = 'info2'
 
     if (solarpair2 === '末夜套') {
-        末夜套(num3_id, num4_id, result_id, rank_id, match_id, info_id);
+        末夜套(num3_id, num4_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair2 === '永恒套') {
-        永恒套(num3_id, num4_id, result_id, rank_id, match_id, info_id);
+        永恒套(num3_id, num4_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair2 === '神殿套') {
-        神殿套(num3_id, num4_id, result_id, rank_id, match_id, info_id);
+        神殿套(num3_id, num4_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair2 === '深海套') {
-        深海套(num3_id, num4_id, result_id, rank_id, match_id, info_id);
+        深海套(num3_id, num4_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     }
 }
 
@@ -53,30 +55,33 @@ function calculate_team3() {
     result_id = 'result3'
     rank_id = 'rank3'
     match_id = 'match3'
+    contest_multiplier_id = 'contest_multiplier3'
     info_id = 'info3'
 
     if (solarpair3 === '末夜套') {
-        末夜套(num5_id, num6_id, result_id, rank_id, match_id, info_id);
+        末夜套(num5_id, num6_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair3 === '永恒套') {
-        永恒套(num5_id, num6_id, result_id, rank_id, match_id, info_id);
+        永恒套(num5_id, num6_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair3 === '神殿套') {
-        神殿套(num5_id, num6_id, result_id, rank_id, match_id, info_id);
+        神殿套(num5_id, num6_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     } else if (solarpair3 === '深海套') {
-        深海套(num5_id, num6_id, result_id, rank_id, match_id, info_id);
+        深海套(num5_id, num6_id, result_id, rank_id, match_id, contest_multiplier_id, info_id);
     }
 
 }
 
 
 
-function 末夜套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
+function 末夜套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id) {
     
 
     攻击 = document.getElementById(num1_id).value;
     防御 = document.getElementById(num2_id).value;
     total_damange = document.getElementById(result_id).value;
-    var match_count = document.getElementById(match_id).value;
-    var damage_multiplier = 1 + match_count*0.05;
+    match_count = document.getElementById(match_id).value;
+    contest_multiplier = document.getElementById(contest_multiplier_id).value;
+    
+    damage_multiplier = 1 + match_count*0.05 + parseFloat(contest_multiplier)/100;
     total_damange = total_damange/damage_multiplier;
 
     if (!攻击 && 防御 && total_damange) {
@@ -133,14 +138,16 @@ function 末夜套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
     document.getElementById(info_id).innerText = all_attack_info;
 }
 
-function 永恒套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
+function 永恒套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id) {
     
 
     攻击 = document.getElementById(num1_id).value;
     防御 = document.getElementById(num2_id).value;
     total_damange = document.getElementById(result_id).value;
-    var match_count = document.getElementById(match_id).value;
-    var damage_multiplier = 1 + match_count*0.05;
+    match_count = document.getElementById(match_id).value;
+    contest_multiplier = document.getElementById(contest_multiplier_id).value;
+    
+    damage_multiplier = 1 + match_count*0.05 + parseFloat(contest_multiplier)/100;
     total_damange = total_damange/damage_multiplier;
 
     if (!攻击 && 防御 && total_damange) {
@@ -202,13 +209,15 @@ function 永恒套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
     document.getElementById(info_id).innerText = all_attack_info;
 }
 
-function 神殿套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
+function 神殿套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id) {
     
     攻击 = document.getElementById(num1_id).value;
     生命 = document.getElementById(num2_id).value;
     total_damange = document.getElementById(result_id).value;
-    var match_count = document.getElementById(match_id).value;
-    var damage_multiplier = 1 + match_count*0.05;
+    match_count = document.getElementById(match_id).value;
+    contest_multiplier = document.getElementById(contest_multiplier_id).value;
+    
+    damage_multiplier = 1 + match_count*0.05 + parseFloat(contest_multiplier)/100;
     total_damange = total_damange/damage_multiplier;
 
     if (!攻击 && 生命 && total_damange) {
@@ -262,12 +271,14 @@ function 神殿套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
 }
 
 
-function 深海套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
+function 深海套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id) {
     
     攻击 = document.getElementById(num1_id).value;
     total_damange = document.getElementById(result_id).value;
-    var match_count = document.getElementById(match_id).value;
-    var damage_multiplier = 1 + match_count*0.05;
+    match_count = document.getElementById(match_id).value;
+    contest_multiplier = document.getElementById(contest_multiplier_id).value;
+    
+    damage_multiplier = 1 + match_count*0.05 + parseFloat(contest_multiplier)/100;
     // Clear num2 values
     document.getElementById(num2_id).value = 0;
 
@@ -320,7 +331,7 @@ function 深海套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
     document.getElementById(info_id).innerText = all_attack_info;
 }
 
-function 四星卡套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
+function 四星卡套(num1_id, num2_id, result_id, rank_id, match_id, contest_multiplier_id, info_id) {
     // TODO: Add the calculation for the four-star card set
 
     攻击 = document.getElementById(num1_id).value;
@@ -329,8 +340,10 @@ function 四星卡套(num1_id, num2_id, result_id, rank_id, match_id, info_id) {
         alert("请输入攻击值.");
         return
     }
-    var match_count = document.getElementById(match_id).value;
-    var damage_multiplier = 1 + match_count*0.05;
+    match_count = document.getElementById(match_id).value;
+    contest_multiplier = document.getElementById(contest_multiplier_id).value;
+    
+    damage_multiplier = 1 + match_count*0.05 + parseFloat(contest_multiplier)/100;
     // Clear num2 values
     document.getElementById(num2_id).value = 0;
     document.getElementById(result_id).value = 攻击*damage_multiplier;
