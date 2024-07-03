@@ -43,8 +43,9 @@
         <div id="content"> 
           
           <div id="battlestat" class="content-region hide">
-            <p>没有绝好的芯核要怎么选芯核来配搭档？！</p>
-            <p>用法：输入其中两个数值，计算第三个，可以反向计算。</p>
+            <!-- <p>没有绝好的芯核要怎么选芯核来配搭档？！</p> -->
+            <p>对比搭档不同数值转换和武器和加成能达到的伤害。</p>
+            <p>用法：输入其中两个数值，计算第三个，可以反向计算（攻击套装只需输入攻击）。</p>
             <p style="font-size: x-small;">注：非官方，只提供大概的伤害对比，换算防御/生命/攻击，不进行攻击时间计算，同套对比较准确。</p>
             <p style="font-size: x-small;">待更新：双暴/誓约增伤等评分数值。</p>
             <br><br>
@@ -84,16 +85,16 @@
                 </select>
               </div>
               <div class="input-container">
+                <input type="number" id="num1" placeholder="攻击">
+                <input type="number" id="num2" placeholder="防御/生命">
+                <input type="number" id="result1" placeholder="总伤害" style="color: darkslategray;">
                 <select id="weapon1">
                   <option value="专武">专武</option>
                   <option value="猎人重剑">猎人重剑</option>
                   <option value="猎人法杖">猎人法杖</option>
                   <option value="猎人手枪">猎人手枪</option>
                   <option value="猎人单手剑">猎人单手剑</option>
-              </select>
-                <input type="number" id="num1" placeholder="攻击">
-                <input type="number" id="num2" placeholder="防御/生命">
-                <input type="number" id="result1" placeholder="总伤害" style="color: darkslategray;">
+                </select>
                 <button onclick="calculate_team1()">计算</button>
               </div>
               <div class="input-container">
@@ -142,16 +143,16 @@
                 </select>
               </div>
               <div class="input-container">
+                <input type="number" id="num3" placeholder="攻击">
+                <input type="number" id="num4" placeholder="防御/生命">
+                <input type="number" id="result2" placeholder="总伤害" style="color: darkslategray;">
                 <select id="weapon2">
                   <option value="专武">专武</option>
                   <option value="猎人重剑">猎人重剑</option>
                   <option value="猎人法杖">猎人法杖</option>
                   <option value="猎人手枪">猎人手枪</option>
                   <option value="猎人单手剑">猎人单手剑</option>
-              </select>
-                <input type="number" id="num3" placeholder="攻击">
-                <input type="number" id="num4" placeholder="防御/生命">
-                <input type="number" id="result2" placeholder="总伤害" style="color: darkslategray;">
+                </select>               
                 <button onclick="calculate_team2()">计算</button>
               </div>
               <div class="input-container">
@@ -200,16 +201,16 @@
                 </select>
               </div>
               <div class="input-container">
-                  <select id="weapon3">
-                      <option value="专武">专武</option>
-                      <option value="猎人重剑">猎人重剑</option>
-                      <option value="猎人法杖">猎人法杖</option>
-                      <option value="猎人手枪">猎人手枪</option>
-                      <option value="猎人单手剑">猎人单手剑</option>
-                  </select>
                 <input type="number" id="num5" placeholder="攻击">
                 <input type="number" id="num6" placeholder="防御/生命">
                 <input type="number" id="result3" placeholder="总伤害" style="color: darkslategray;">
+                <select id="weapon3">
+                  <option value="专武">专武</option>
+                  <option value="猎人重剑">猎人重剑</option>
+                  <option value="猎人法杖">猎人法杖</option>
+                  <option value="猎人手枪">猎人手枪</option>
+                  <option value="猎人单手剑">猎人单手剑</option>
+              </select>
                 <button onclick="calculate_team3()">计算</button>
               </div>
               <div class="input-container">
