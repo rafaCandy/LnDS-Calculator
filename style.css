@@ -152,6 +152,9 @@ html {
     width: 98%;
     margin: 2px auto;
     padding: 2px;
+    display: flex;
+    /* flex-direction: column; This assumes vertical stacking of items */
+    gap: 10px; /* Adjust the gap value as needed */
     /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(239, 239, 227, 0.359); */
