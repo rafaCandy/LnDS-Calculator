@@ -152,7 +152,7 @@ html {
     width: 98%;
     margin: 2px auto;
     padding: 2px;
-    display: flex;
+    display: block;
     /* flex-direction: column; This assumes vertical stacking of items */
     gap: 10px; /* Adjust the gap value as needed */
     /* border: 1px solid #ccc;
