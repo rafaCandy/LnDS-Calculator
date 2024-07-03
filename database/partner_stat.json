@@ -1,0 +1,63 @@
+{
+    "末夜套": { 
+        "普攻": [
+            { "base": 55,
+              "attack_mult": 0.29,
+              "def_mult": 1.17,
+            "life_mult": 0},
+            {
+                "base": 50,
+                "attack_mult": 0.26,
+                "def_mult": 1.05,
+                "life_mult": 0
+            },
+            {
+                "base": 66,
+                "attack_mult": 0.23,
+                "def_mult": 0.93,
+                "life_mult": 0
+            },
+            {
+                "base": 72,
+                "attack_mult": 0.38,
+                "def_mult": 1.52,
+                "life_mult": 0
+            },
+            {
+                "base": 77,
+                "attack_mult": 0.41,
+                "def_mult": 1.63,
+                "life_mult": 0
+            }
+        ],
+        "普攻重击": [
+            {"base": 150,
+             "attack_mult": 0.8,
+             "def_mult": 3.17,
+             "life_mult": 0}
+        ],
+        "主动技伤害": [
+            {"base": 405,
+             "attack_mult": 2.15,
+             "def_mult": 8.52,
+             "life_mult": 0}
+        ],
+        "共鸣技伤害": [
+            {"base": 631,
+             "attack_mult": 3.36,
+             "def_mult": 13.33,
+             "life_mult": 0},
+             {"base": 686,
+             "attack_mult": 3.66,
+             "def_mult": 14.5,
+             "life_mult": 0}
+        ],
+        "誓约技伤害": [
+            {"base": 1440,
+             "attack_mult": 7.8,
+             "def_mult": 30.6,
+             "life_mult": 0}
+        ],
+        "协助技伤害": []
+    }
+}
