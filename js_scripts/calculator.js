@@ -177,7 +177,7 @@ function 末夜套(num1_id, num2_id, result_id, rank_id, match_id, contest_multi
         alert("武器数据未知：" + 武器);
     }
 
-    var 普攻 = (普攻base + 0.29*攻击 + 1.17*防御 
+    var 普攻 = (普攻base + 1.17*防御 
     + 1.05*防御 + 1.4*防御 + 1.52*防御 + 1.63*防御)*damage_multiplier;
     var 普攻重击= (普攻重击base +  防御 * 3.17)*damage_multiplier;
     var 主动技伤害 = (主动技伤害base +  防御 * 8.52)*damage_multiplier;
@@ -186,7 +186,7 @@ function 末夜套(num1_id, num2_id, result_id, rank_id, match_id, contest_multi
     var 誓约技伤害 = (1440 + 攻击 * 7.8 +  防御 * 30.6)*damage_multiplier;
     var 协助技伤害 = 0;
 
-    all_attack_info = rank + "阶:\n";
+    all_attack_info = rank + "阶:\n"
                     + "普攻： " + Math.round(普攻) + "\n" // （五段总计）
                     + "普攻重击： " + Math.round(普攻重击) + "\n"
                     + "主动技伤害 " + Math.round(主动技伤害) + "\n"
@@ -257,7 +257,7 @@ function 永恒套(num1_id, num2_id, result_id, rank_id, match_id, contest_multi
     var 誓约技伤害 = (1440 + 攻击 * 7.8 +  防御 * 30.6)*damage_multiplier;
     var 协助技伤害 = (防御 * 2.4)*damage_multiplier;
 
-    all_attack_info = rank + "阶 ================\n"
+    all_attack_info = rank + "阶:\n"
                     + "普攻： " + Math.round(普攻) + "\n"
                     + "普攻重击： " + Math.round(普攻重击) + "\n"
                     + "强化重击： " + Math.round(强化重击) + "\n"
