@@ -28,31 +28,42 @@
     
   })(jQuery);
 
-
-
-document.getElementById('toggle-info1').addEventListener('change', function () {
-    var displayWindow = document.getElementById('info1');
-    if (this.checked) {
-        displayWindow.style.display = 'block';
-    } else {
-        displayWindow.style.display = 'none';
-    }
-});
-
-document.getElementById('toggle-info2').addEventListener('change', function () {
-  var displayWindow = document.getElementById('info2');
+  
+// // Fucntion for toggle-affect1/2/3 checkbox for all input id=weakness & critical_rate & critical_damage
+document.getElementById('toggle-affect1').addEventListener('change', function() {
+  var affectInput = document.getElementById('affect-input1');
   if (this.checked) {
-      displayWindow.style.display = 'block';
+      affectInput.classList.remove('hidden');
   } else {
-      displayWindow.style.display = 'none';
+      affectInput.classList.add('hidden');
   }
 });
 
-document.getElementById('toggle-info3').addEventListener('change', function () {
-  var displayWindow = document.getElementById('info3');
+document.getElementById('toggle-affect2').addEventListener('change', function() {
+  var affectInput = document.getElementById('affect-input2');
   if (this.checked) {
-      displayWindow.style.display = 'block';
+      affectInput.classList.remove('hidden');
   } else {
-      displayWindow.style.display = 'none';
+      affectInput.classList.add('hidden');
   }
 });
+
+document.getElementById('toggle-affect3').addEventListener('change', function() {
+  var affectInput = document.getElementById('affect-input3');
+  if (this.checked) {
+      affectInput.classList.remove('hidden');
+  } else {
+      affectInput.classList.add('hidden');
+  }
+});
+
+// // Optionally, initialize the state based on the checkbox status
+// document.addEventListener('DOMContentLoaded', function() {
+//   var toggleAffect = document.getElementById('toggle-affect');
+//   var affectInput = document.getElementById('affect-input');
+//   if (toggleAffect.checked) {
+//       affectInput.classList.remove('hidden');
+//   } else {
+//       affectInput.classList.add('hidden');
+//   }
+// });

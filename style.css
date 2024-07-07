@@ -170,17 +170,44 @@ html {
     background-color: rgba(245, 245, 220, 0.8); /* Beige background with 80% opacity */
     color: black; /* Black text */
     display: block; /* Show the display by default */
+  }
+  .hidden {
+    display: none;
+  }
+  .styled-button {
+    background-color: #2d5ba0; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 5px 10px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block */
+    font-size: 14px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
-  /* .input {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: rgba(239, 239, 227, 0.359);
-  } */
-  /* .label {
-    width: 30%;
-    text-align: right;
-    padding-right: 10px;
-  } */
+
+.styled-button:hover {
+    background-color: #2d5ba0; /* Darker green on hover */
+}
+
+.styled-button-clear {
+    background-color: #9d453e; /* Red background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 5px 10px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block */
+    font-size: 14px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.styled-button-clear:hover {
+    background-color: #9d453e; /* Darker red on hover */
+}
