@@ -204,7 +204,7 @@ function 末夜套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = 0;
     
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
     共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
@@ -317,7 +317,7 @@ function 永恒套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = (defense * 2.4)*damage_multiplier;
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     强化重击_crit_exp = 强化重击 * (1 + parseFloat(criticalRate)/100 * (强化重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
@@ -433,7 +433,7 @@ function 神殿套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = (47 + attack * 0.25 +  life * 0.022)*damage_multiplier;
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
     共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
@@ -535,7 +535,7 @@ function 深海套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = (306 + attack * 4.08)*damage_multiplier;
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
     共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
@@ -636,7 +636,7 @@ function 逐光套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = (300 + attack * 4.0)*damage_multiplier; // 347 + attack * 4.62
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
     共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
@@ -736,7 +736,7 @@ function 拥雪套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     var 协助技伤害 = (260 + attack * 3.48)*damage_multiplier; // 370 + attack * 4.92
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
-    普攻_crit_exp = 普攻 * (1 + parseFloat(criticalRate)/100 * (普攻 * parseFloat(criticalDamage)/100));
+    普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
     普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
     主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
     共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
