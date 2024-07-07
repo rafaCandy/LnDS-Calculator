@@ -494,7 +494,7 @@ function 深海套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Check if the user has entered a value for attack or total_damange
     if (!attack && !total_damange) {
-        alert("请输入attack值或总伤害值.");
+        alert("请输入攻击值或总伤害值.");
         return
     }
     if (!attack) {
@@ -595,7 +595,7 @@ function 逐光套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Check if the user has entered a value for attack or total_damange
     if (!attack && !total_damange) {
-        alert("请输入attack值或总伤害值.");
+        alert("请输入攻击值或总伤害值.");
         return
     }
     if (!attack) {
@@ -696,7 +696,7 @@ function 拥雪套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Check if the user has entered a value for attack or total_damange
     if (!attack && !total_damange) {
-        alert("请输入attack值或总伤害值.");
+        alert("请输入攻击值或总伤害值.");
         return
     }
     if (!attack) {
