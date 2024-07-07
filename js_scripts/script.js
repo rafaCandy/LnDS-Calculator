@@ -28,6 +28,8 @@
     
   })(jQuery);
 
+
+
   
 // // Fucntion for toggle-affect1/2/3 checkbox for all input id=weakness & critical_rate & critical_damage
 document.getElementById('toggle-affect1').addEventListener('change', function() {
@@ -67,3 +69,44 @@ document.getElementById('toggle-affect3').addEventListener('change', function() 
 //       affectInput.classList.add('hidden');
 //   }
 // });
+
+// Detect team container selection and update the container color dynamically
+// Create color mapping for different partners with low opacity
+// 末夜套: yellow
+// 永恒套: skyblue
+// 神殿套: pink
+// 深海套: purple
+// 逐光套: green
+// 拥雪套: red
+const partnerColor = {
+  "末夜套": "rgba(255, 255, 0, 0.3)",
+  "永恒套": "rgba(0, 191, 255, 0.3)", // "skyblue
+  "神殿套": "rgba(255, 192, 203, 0.3)",
+  "深海套": "rgba(128, 0, 128, 0.3)",
+  "逐光套": "rgba(0, 128, 0, 0.3)",
+  "拥雪套": "rgba(255, 0, 0, 0.3)"
+};
+
+function updateContainerColor(partnerSelect, teamNum) {
+  var container = document.querySelector('.team' + teamNum);
+  var partner = partnerSelect.value;
+  container.style.backgroundColor = partnerColor[partner];
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the partner select element for team1/2/3
+  var partnerSelect1 = document.querySelector('.partner-select1');
+  var partnerSelect2 = document.querySelector('.partner-select2');
+  var partnerSelect3 = document.querySelector('.partner-select3');
+
+  // Add an event listener to detect changes
+  partnerSelect1.addEventListener('change', function() {
+    updateContainerColor(partnerSelect1, 1);
+  });
+  partnerSelect2.addEventListener('change', function() {
+    updateContainerColor(partnerSelect2, 2);
+  });
+  partnerSelect3.addEventListener('change', function() {
+    updateContainerColor(partnerSelect3, 3);
+  });
+});
