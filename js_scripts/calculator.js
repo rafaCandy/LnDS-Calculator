@@ -205,11 +205,11 @@ function 末夜套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
     
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    // 协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    // 协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
@@ -318,12 +318,12 @@ function 永恒套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    强化重击_crit_exp = 强化重击 * (1 + parseFloat(criticalRate)/100 * (强化重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    强化重击_crit_exp = 强化重击 + (1 + parseFloat(criticalRate)/100) * (强化重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
@@ -434,11 +434,11 @@ function 神殿套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
@@ -536,11 +536,11 @@ function 深海套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
@@ -637,11 +637,11 @@ function 逐光套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
@@ -737,11 +737,11 @@ function 拥雪套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
 
     // Calculate critical expected damange, both criticalRate and criticalDamage are in percentage
     普攻_crit_exp = 普攻 + (1 + parseFloat(criticalRate)/100) * (普攻 * parseFloat(criticalDamage)/100);
-    普攻重击_crit_exp = 普攻重击 * (1 + parseFloat(criticalRate)/100 * (普攻重击 * parseFloat(criticalDamage)/100));
-    主动技伤害_crit_exp = 主动技伤害 * (1 + parseFloat(criticalRate)/100 * (主动技伤害 * parseFloat(criticalDamage)/100));
-    共鸣技伤害_crit_exp = 共鸣技伤害 * (1 + parseFloat(criticalRate)/100 * (共鸣技伤害 * parseFloat(criticalDamage)/100));
-    誓约技伤害_crit_exp = 誓约技伤害 * (1 + parseFloat(criticalRate)/100 * (誓约技伤害 * parseFloat(criticalDamage)/100));
-    协助技伤害_crit_exp = 协助技伤害 * (1 + parseFloat(criticalRate)/100 * (协助技伤害 * parseFloat(criticalDamage)/100));
+    普攻重击_crit_exp = 普攻重击 + (1 + parseFloat(criticalRate)/100) * (普攻重击 * parseFloat(criticalDamage)/100);
+    主动技伤害_crit_exp = 主动技伤害 + (1 + parseFloat(criticalRate)/100) * (主动技伤害 * parseFloat(criticalDamage)/100);
+    共鸣技伤害_crit_exp = 共鸣技伤害 + (1 + parseFloat(criticalRate)/100) * (共鸣技伤害 * parseFloat(criticalDamage)/100);
+    誓约技伤害_crit_exp = 誓约技伤害 + (1 + parseFloat(criticalRate)/100) * (誓约技伤害 * parseFloat(criticalDamage)/100);
+    协助技伤害_crit_exp = 协助技伤害 + (1 + parseFloat(criticalRate)/100) * (协助技伤害 * parseFloat(criticalDamage)/100);
 
     // Calculate weakness expected damange
     普攻_weak_exp = 普攻 * (1 + parseFloat(weakness)/100);
