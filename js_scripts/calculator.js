@@ -505,6 +505,10 @@ function 深海套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
         // Calculate total_damange
         total_damange = Math.round(attack*damage_multiplier);
         container.querySelector('#converted_damage' + team_id).value = total_damange;
+    } else if (attack && total_damange) {
+        // Calculate total_damange
+        total_damange = Math.round(attack*damage_multiplier);
+        container.querySelector('#converted_damage' + team_id).value = total_damange;
     }
 
     // Update the all_attack_info string with calculated values
@@ -606,6 +610,10 @@ function 逐光套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
         // Calculate total_damange
         total_damange = Math.round(attack*damage_multiplier);
         container.querySelector('#converted_damage' + team_id).value = total_damange
+    } else if (attack && total_damange) {
+        // Calculate total_damange
+        total_damange = Math.round(attack*damage_multiplier);
+        container.querySelector('#converted_damage' + team_id).value = total_damange;
     }
 
     // Update the all_attack_info string with calculated values
@@ -707,6 +715,10 @@ function 拥雪套(team_id, num1_id, num2_id, result_id, rank_id, match_id, cont
         // Calculate total_damange
         total_damange = Math.round(attack*damage_multiplier);
         container.querySelector('#converted_damage' + team_id).value = total_damange
+    } else if (attack && total_damange) {
+        // Calculate total_damange
+        total_damange = Math.round(attack*damage_multiplier);
+        container.querySelector('#converted_damage' + team_id).value = total_damange;
     }
 
     // Update the all_attack_info string with calculated values
